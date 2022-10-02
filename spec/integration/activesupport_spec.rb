@@ -1,3 +1,11 @@
+require 'bundler/inline'
+
+gemfile do
+  gem 'activesupport', '~> 5.x', require: false
+  gem 'hashie', path: './'
+  gem 'rspec'
+end
+
 require 'active_support'
 require 'active_support/core_ext'
 require 'active_support/core_ext/hash/indifferent_access'

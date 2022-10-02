@@ -2,7 +2,7 @@
 
 require 'rubygems'
 require 'bundler'
-Bundler.setup
+# Bundler.setup
 
 Bundler::GemHelper.install_tasks
 
@@ -32,4 +32,4 @@ task :integration_specs do
   end
 end
 
-task default: %i[rubocop spec integration_specs]
+task default: %i[rubocop spec]

@@ -1,4 +1,0 @@
-source 'http://rubygems.org'
-
-gem 'hashie', path: '../../..'
-gem 'rspec', '~> 3.5.0'

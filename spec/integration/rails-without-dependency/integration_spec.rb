@@ -1,5 +1,11 @@
 require 'rspec/core'
 
+require 'bundler/inline'
+
+gemfile do
+  gem 'hashie', path: '../../..'
+end
+
 RSpec.describe 'partial-rails' do
   context 'when Rails constant is present but the railties are not' do
     before(:all) do

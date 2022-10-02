@@ -1,3 +1,16 @@
+require 'bundler/inline'
+
+gemfile(true) do
+  source 'http://rubygems.org'
+
+  gem 'activesupport', '~> 5.x'
+  gem 'elasticsearch-api', '~> 7.0.0'
+  gem 'elasticsearch-model', '~> 7.0.0'
+  gem 'faraday', '< 2.0'
+  gem 'hashie', path: './'
+  gem 'rspec', '~> 3.5'
+end
+
 require 'elasticsearch/model'
 require 'hashie'
 

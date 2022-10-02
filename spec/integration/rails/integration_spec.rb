@@ -1,5 +1,15 @@
 ENV['RAILS_ENV'] = 'test'
 
+require 'bundler/inline'
+gemfile do
+  source 'http://rubygems.org'
+
+  gem 'hashie', path: '../../..'
+  gem 'rails', '~> 6.0.0'
+  gem 'rspec', '~> 3.5.0'
+  gem 'rspec-rails'
+end
+
 require 'rspec/core'
 
 RSpec.describe 'rails', type: :request do
